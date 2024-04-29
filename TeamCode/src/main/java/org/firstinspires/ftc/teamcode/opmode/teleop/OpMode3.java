@@ -9,7 +9,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
 import org.firstinspires.ftc.teamcode.common.hardware.RobotHardware;
 
 //test
-@TeleOp(name = "OpMode3")
+@TeleOp(name = "OpModeSummerCamp")
 
 public class OpMode3 extends LinearOpMode {
     public ElapsedTime mRunTime = new ElapsedTime();
@@ -26,16 +26,15 @@ public class OpMode3 extends LinearOpMode {
 
         robot.init(hardwareMap);
 
-        robot.liftHex.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        robot.liftHex.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
-        robot.liftHex.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        //robot.liftHex.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        //robot.liftHex.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+        //robot.liftHex.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         // Put initialization blocks here.
         waitForStart();
         while (opModeIsActive()) {
-            double horizontal = gamepad1.left_stick_x * 0.8;
-            double vertical = -gamepad1.left_stick_y * 0.8;
-            double turn = gamepad1.right_stick_x * 0.8;
-
+            double horizontal = gamepad1.left_stick_x * -0.3;
+            double vertical = -gamepad1.left_stick_y * 0.3;
+            double turn = gamepad1.right_stick_x * 0.3;
 
             robot.setDrivePower(vertical + turn - horizontal, vertical - turn + horizontal, vertical + turn + horizontal, vertical - turn - horizontal);
 
@@ -45,7 +44,7 @@ public class OpMode3 extends LinearOpMode {
                     robot.motorfr.getCurrentPosition(),
                     robot.motorbr.getCurrentPosition()
             ));
-
+            /*
             //lift arm start
             if (gamepad2.b) { //if button a pressed
                 robot.liftHex.setPower(0.8);
@@ -166,7 +165,8 @@ public class OpMode3 extends LinearOpMode {
             sleep(liftTimeMs);             // let motor run for some time seconds.
             robot.liftArm.setPower(liftPowerEnd);
         }
+*/
+        }
 
     }
-
-
+}

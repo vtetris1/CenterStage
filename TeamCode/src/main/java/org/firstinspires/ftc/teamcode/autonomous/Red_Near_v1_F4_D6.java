@@ -10,6 +10,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 //test
 //commit test
+/*
 //ignore this for now
 @Autonomous(name="Red_Near_v1_F4_D6")
 @Disabled
@@ -289,6 +290,7 @@ public class Red_Near_v1_F4_D6 extends LinearOpMode {
                         robot.motorbr.isBusy())){
 
          */
+/*
             if (bKeepYaw) {
                 currentYaw = robot.imu.getRobotYawPitchRollAngles().getYaw(AngleUnit.DEGREES);
                 if (Math.abs(currentYaw - targetYaw) > 2.0)
@@ -445,3 +447,4 @@ public class Red_Near_v1_F4_D6 extends LinearOpMode {
     }
 
 }
+*/

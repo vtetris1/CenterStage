@@ -1,5 +1,5 @@
 package org.firstinspires.ftc.teamcode.opmode.teleop;
-
+/*
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.util.ElapsedTime;
@@ -15,7 +15,7 @@ public class DistanceTest extends LinearOpMode {
 
     /**
      * This function is executed when this Op Mode is selected from the Driver Station.
-     */
+
     @Override
     public void runOpMode() throws InterruptedException {
 
@@ -32,3 +32,4 @@ public class DistanceTest extends LinearOpMode {
     }
 }
 
+*/

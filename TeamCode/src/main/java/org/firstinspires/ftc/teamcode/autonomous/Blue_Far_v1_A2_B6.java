@@ -8,7 +8,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
 import org.firstinspires.ftc.teamcode.common.hardware.RobotHardware;
-
+/*
 //ignore this for now
 @Autonomous(name="Blue_Far_v1_A2_B6")
 public class Blue_Far_v1_A2_B6 extends LinearOpMode {
@@ -238,7 +238,7 @@ public class Blue_Far_v1_A2_B6 extends LinearOpMode {
 
                 driveMotors((int)(sideTicks*1.2), -sideTicks, -sideTicks, (int)(sideTicks*1.2), 0.5,
                         true, robot.yaw0);
-*/
+
                 turnToTargetYaw(-90+robot.yaw0, 0.42, 3000);
 
 
@@ -263,8 +263,9 @@ public class Blue_Far_v1_A2_B6 extends LinearOpMode {
                 robot.boardPixel.setPosition(0.7);
                 sleep(1000);
                 robot.boardPixel.setPosition(0.0);
-*/
+                */
 
+/*
             }
 
             while (opModeIsActive()) {
@@ -474,3 +475,4 @@ public class Blue_Far_v1_A2_B6 extends LinearOpMode {
     }
 
 }
+*/

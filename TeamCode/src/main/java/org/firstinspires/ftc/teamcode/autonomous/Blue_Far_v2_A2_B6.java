@@ -1,6 +1,6 @@
 package org.firstinspires.ftc.teamcode.autonomous;
 //test
-
+/*
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
@@ -274,7 +274,7 @@ public class Blue_Far_v2_A2_B6 extends LinearOpMode {
                 robot.boardPixel.setPosition(0.7);
                 sleep(1000);
                 robot.boardPixel.setPosition(0.0);
-*/
+
 
             }
 
@@ -501,3 +501,4 @@ public class Blue_Far_v2_A2_B6 extends LinearOpMode {
     }
 
 }
+*/

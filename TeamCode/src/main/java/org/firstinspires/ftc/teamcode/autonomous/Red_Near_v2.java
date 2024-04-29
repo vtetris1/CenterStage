@@ -1,5 +1,6 @@
 package org.firstinspires.ftc.teamcode.autonomous;
-//test
+//
+/*
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
@@ -341,7 +342,7 @@ public class Red_Near_v2 extends LinearOpMode {
                 robot.boardPixel.setPosition(0.7);
                 sleep(1000);
                 robot.boardPixel.setPosition(0.0);
-*/
+
 
             }
 
@@ -557,3 +558,4 @@ public class Red_Near_v2 extends LinearOpMode {
     }
 
 }
+*/

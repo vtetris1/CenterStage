@@ -8,7 +8,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
 import org.firstinspires.ftc.teamcode.common.hardware.RobotHardware;
-
+/*
 //ignore this for now
 @Autonomous(name="Red_Far_v1_F2_E6")
 public class Red_Far_v1_F2_E6 extends LinearOpMode {
@@ -267,11 +267,11 @@ public class Red_Far_v1_F2_E6 extends LinearOpMode {
                 robot.boardPixel.setPosition(0.7);
                 sleep(1000);
                 robot.boardPixel.setPosition(0.0);
-*/
+
 
             }
 
-
+/*
             while (opModeIsActive()) {
                 telemetry.addLine(String.format("DistanceR: %.1f inch\nDistanceL: %.1f inch\nCurrent Yaw: %.1f",
                         robot.distanceR.getDistance(DistanceUnit.INCH),
@@ -281,7 +281,8 @@ public class Red_Far_v1_F2_E6 extends LinearOpMode {
             }
         }
     }
-
+*/
+/*
     private void driveMotors(int flTarget, int blTarget, int frTarget, int brTarget,
                              double power,
                              boolean bKeepYaw, double targetYaw){
@@ -483,3 +484,4 @@ public class Red_Far_v1_F2_E6 extends LinearOpMode {
     }
 
 }
+*/

@@ -9,7 +9,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
 import org.firstinspires.ftc.teamcode.common.hardware.RobotHardware;
-
+/*
 //ignore this for now
 @Autonomous(name="Blue_Near_v1_A2_B6")
 
@@ -414,3 +414,4 @@ public class Blue_Near_v1_A2_B6 extends LinearOpMode {
     }
 
 }
+*/

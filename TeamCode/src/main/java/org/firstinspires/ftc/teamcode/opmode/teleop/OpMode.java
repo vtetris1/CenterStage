@@ -6,6 +6,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import org.firstinspires.ftc.teamcode.common.hardware.RobotHardware;
 import com.qualcomm.robotcore.util.ElapsedTime;
 //test
+/*
 @TeleOp(name = "OpMode2")
 
 public class OpMode extends LinearOpMode {
@@ -15,7 +16,7 @@ public class OpMode extends LinearOpMode {
 
     /**
      * This function is executed when this Op Mode is selected from the Driver Station.
-     */
+
     @Override
     public void runOpMode() throws InterruptedException {
 
@@ -134,7 +135,7 @@ public class OpMode extends LinearOpMode {
             }
 
 
- */
+ /*
             telemetry.update();
 
 
@@ -142,4 +143,4 @@ public class OpMode extends LinearOpMode {
     }
 
 }
-
+*/

@@ -54,27 +54,27 @@ public class RobotHardware {
 
     public DcMotor motorbl = null;
 
-    public DcMotor liftHex = null;
+    //public DcMotor liftHex = null;
 
-    public DcMotor liftArm = null;
+    //public DcMotor liftArm = null;
 
-    public DcMotor launcher = null;
+    //public DcMotor launcher = null;
 
     //public DcMotor linearSlider = null;
 
 
-    public DistanceSensor distanceR = null;
-    public DistanceSensor distanceL = null;
+    //public DistanceSensor distanceR = null;
+    //public DistanceSensor distanceL = null;
 
 
-    public Servo tiltServoRight = null;
-    public Servo grabServoRight = null;
+    //public Servo tiltServoRight = null;
+    //public Servo grabServoRight = null;
 
-    public Servo tiltServoLeft = null;
-    public Servo grabServoLeft = null;
+    //public Servo tiltServoLeft = null;
+    //public Servo grabServoLeft = null;
 
 
-    public Servo airplaneLauncher = null;
+    //public Servo airplaneLauncher = null;
 
     public IMU imu;
 
@@ -97,14 +97,14 @@ public class RobotHardware {
         hwMap = ahwMap;
 
         // Define and Initialize Motors (note: need to use reference to actual OpMode).
-        motorfl = hwMap.get(DcMotor.class, "motorfl");
-        motorfr = hwMap.get(DcMotor.class, "motorfr");
-        motorbl = hwMap.get(DcMotor.class, "motorbl");
-        motorbr = hwMap.get(DcMotor.class, "motorbr");
+        motorfl = hwMap.get(DcMotor.class, "front_left");
+        motorfr = hwMap.get(DcMotor.class, "front_reich");
+        motorbl = hwMap.get(DcMotor.class, "back_left");
+        motorbr = hwMap.get(DcMotor.class, "back_reich");
         //launcher = hwMap.get(DcMotor.class, "launcher");
 
-        liftHex = hwMap.get(DcMotor.class, "liftHex");
-        liftArm = hwMap.get(DcMotor.class, "liftArm");
+        //liftHex = hwMap.get(DcMotor.class, "liftHex");
+        //liftArm = hwMap.get(DcMotor.class, "liftArm");
 
         // set Brake zero power behavior
         motorfr.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
@@ -114,25 +114,27 @@ public class RobotHardware {
 
         // Define and initialize ALL installed servos.
 
-        airplaneLauncher = hwMap.get(Servo.class, "feeder");
-        tiltServoRight = hwMap.get(Servo.class, "tiltServoR");
-        grabServoRight = hwMap.get(Servo.class, "grabServoR");
-        tiltServoLeft = hwMap.get(Servo.class, "tiltServoL");
-        grabServoLeft = hwMap.get(Servo.class, "grabServoL");
+        //airplaneLauncher = hwMap.get(Servo.class, "feeder");
+        //tiltServoRight = hwMap.get(Servo.class, "tiltServoR");
+        //grabServoRight = hwMap.get(Servo.class, "grabServoR");
+        //tiltServoLeft = hwMap.get(Servo.class, "tiltServoL");
+        //grabServoLeft = hwMap.get(Servo.class, "grabServoL");
         //autoPixel.setPosition(0.5);
         //boardPixel.setPosition(0);
         //grabServo.setPosition(0.4);
 
         // Get distance sensors
-        distanceR = hwMap.get(DistanceSensor.class, "distanceR");
-        distanceL = hwMap.get(DistanceSensor.class, "distanceL");
+        //distanceR = hwMap.get(DistanceSensor.class, "distanceR");
+        //distanceL = hwMap.get(DistanceSensor.class, "distanceL");
 
         // Set airplane launcher default servo position
-        airplaneLauncher.setPosition(0);
+        //airplaneLauncher.setPosition(0);
 
         // reverse motor directions
-        motorbl.setDirection(DcMotor.Direction.REVERSE);
         motorfl.setDirection(DcMotorSimple.Direction.REVERSE);
+        motorfr.setDirection(DcMotorSimple.Direction.REVERSE);
+        motorbr.setDirection(DcMotorSimple.Direction.REVERSE);
+        motorbl.setDirection(DcMotorSimple.Direction.REVERSE);
 
         // If there are encoders connected, switch to RUN_USING_ENCODER mode for greater accuracy
         setDrivetrainMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
@@ -231,10 +233,10 @@ public class RobotHardware {
         else if (br < -1.0)
             br = -1.0;
 
-        motorfl.setPower(fl);
+        motorfl.setPower(-1 * fl);
         motorfr.setPower(fr);
         motorbl.setPower(bl);
-        motorbr.setPower(br); //had to manually reverse (the -1 reversed it) (Line:93)
+        motorbr.setPower(-1 * br); //had to manually reverse (the -1 reversed it) (Line:93)
 
     }
     public void setAllDrivePower(double p){ setDrivePower(p,p,p,p);}
